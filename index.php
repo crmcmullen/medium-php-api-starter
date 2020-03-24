@@ -36,7 +36,9 @@ if (in_array($requestMethod, ["GET", "POST", "PUT", "DELETE", "OPTIONS"])) {
 	// instantiate this class and validate the API request
 	$cApiHandler = new API_Handler();
 
-	// if this request is for a token, then there is no validation.
+	// Requests should always include the API Key and JSON Web Token *UNLESS* this request is to 
+	// to get a token. In that case, no validation is required here as the function itself requires 
+	// the API Key as a parameter and will do its own validation.
 	if ($functionName === 'getToken') {
         // default validation to a good response
 		$res = App_Response::getResponse('200');
@@ -45,7 +47,7 @@ if (in_array($requestMethod, ["GET", "POST", "PUT", "DELETE", "OPTIONS"])) {
 	}
 
 	if ($res['response'] !== '200') {
-        // if request is not valid, then return a bad message.
+        // if request is not valid, then raise a bad message.
 		$returnArray = json_encode($res);
 		echo($returnArray);
 	}

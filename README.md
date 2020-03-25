@@ -4,8 +4,8 @@ A starter kit for a handy PHP restful API.
 
 New articles in the future will be features built upon this foundation.
 
-This code accompanies my Medium article entitled, "A Restful PHP API Starter Kit" 
-located at: xxxxxx
+This code accompanies my Medium article entitled, "How to Build a Simple Restful API in PHP" 
+located at: https://medium.com/better-programming/how-to-build-a-simple-restful-api-in-php-c719f03cfa0a
 
 ## License ##
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:

@@ -8,7 +8,7 @@ abstract class Data_Access {
 
 		// we'll move the DB credentials into an INI file in the next lesson and create an app setup class that 
 		// defines all constants from an app_config database table.
-		define("CONST_DB_HOST", "mysql-localhost");  // update with the location of your MySQL host.
+		define("CONST_DB_HOST", "localhost");  // update with the location of your MySQL host.
 		define("CONST_DB_USERNAME", "apistarter");
 		define("CONST_DB_PASSWORD", "7157f0a0-056f-4371-820d-c9c277adb410");
 		define("CONST_DB_SCHEMA", "api_starter");
